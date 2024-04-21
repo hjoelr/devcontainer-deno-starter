@@ -1,0 +1,25 @@
+/**
+ * main.ts
+ */
+
+import { delay } from "./deps.ts";
+
+function capitalize(word: string): string {
+    return word.charAt(0).toUpperCase() + word.slice(1);
+}
+
+function hello(name: string): string {
+    return "Hello " + capitalize(name);
+}
+
+console.log(hello("john"));
+console.log(hello("Sarah"));
+console.log(hello("kai"));
+
+/**
+ * Output:
+ *
+ * Hello John
+ * Hello Sarah
+ * Hello Kai
+ */
